@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Flow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"/>
+   
+
+    <style>
+        body{
+            font-family: cursive;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        input{
+            width: 10%;
+            height: 25px;
+            border:3px solid rgb(153, 255, 0) ;
+        } 
+        button{
+            width: 80px;
+            height: 30px;
+            background-color: rgb(0, 170, 255);
+            border: none;
+            font-weight: 600;
+            font-size: medium;
+            color: rgb(255, 255, 255);
+        }
+
+        .container{
+            position: relative;
+            max-width: 460px;
+            width: 100%;
+            background: #fff;
+            border-radius: 4px;
+            padding: 30px;
+            margin: 0 20px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+          }
+          .container .input-box{
+            position: relative;
+          }
+          .input-box .show_hide{
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #A6A6A6;
+            padding: 5px;
+            cursor: pointer;
+          }
+          .input-box input{
+            height: 60px;
+            width: 85%;
+            border: 2px solid #d3d3d3;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #333;
+            outline: none;
+            padding: 0 50px 0 16px;
+          }
+          .container .indicator{
+            display: none;
+          }
+          .container .indicator.active{
+            display: block;
+            margin-top: 14px;
+          }
+          .indicator .icon-text{
+            display: flex;
+            align-items: center;
+          }
+          .icon-text .error_icon{
+            margin-right: 8px;
+          }
+          .icon-text .text{
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 1px;
+          }
+           
+
+      
+    </style>
+</head>
+<body>
+    <h3>Control Flow</h3>
+    <h5>Loop</h5>
+    <h5>For Loop</h5>
+    <p>Here is the list of my packaged item</p>
+
+    <ul class="pkgitems">
+
+    </ul>
+
+    <h3>Types of loops</h3>
+    <ol>
+        <li>Definite
+            <ul>
+                <li>Simple for loop</li>
+                <li>For loop with multiple expression</li>
+                <li>Infinite for loop</li>
+            </ul>
+        </li>
+        <li>Indefinite
+            <ul>
+                <li> while</li>
+                <li>do while</li>
+            </ul>
+        </li>
+    </ol>
+                   
+
+
+<h3>Password Validation</h3>
+        <div class="container"> 
+            <div class="input-box">
+              <i class="fas fa-eye-slash show_hide"></i>
+              <input spellcheck="false" type="password" placeholder="Enter password">
+            </div>
+            <div class="indicator">
+              <div class="icon-text">
+                <i class="fas fa-exclamation-circle error_icon"></i>
+                <h6 class="text"></h6>
+              </div>
+            </div>
+          </div>
+
+
+
+ <!-- sum should not be greater then 40 of Fibonacci Series  -->  
+   <center> <h3>Conditional Statement</h3>
+    <h3>Fibonacci Series</h3>
+    <h3>  
+        Please input any Number  <input id="number" value="">
+        <button type="button" onclick="fab()">Submit</button>
+        </h3></center>   
+ <script src="index.js"></script>
+</body>
+</html>
