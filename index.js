@@ -91,7 +91,7 @@ else{
    console.log("The Length of password  should be atleast 8 char");
 }*/
 
-
+//fibonacci series
 function fab(){
    var A = 0;
    var B = 1;
@@ -162,3 +162,61 @@ showHide.style.color = "#A6A6A6";
 iconText.style.color = "#A6A6A6";
 }
 });
+
+//PackageList array to show data in un ordered list
+
+const packingList =["tootbrush","socks","shirts","camera","lens"];
+
+function listItems(arg) {
+
+let items= "";
+for (let i = 0; i < arg.length; i++) {
+   items +=`<li>${arg[i]}</li>`;
+}
+return items;
+}
+document.querySelector(".forloop").innerHTML=`
+<ul>
+${listItems(packingList)}
+</ul>
+`;
+
+function listItems2(arg2) {
+
+   let items2= "";
+   let j=0;
+   while(j < arg2.length) {
+      items2 +=`<li>${arg2[j]}</li>`;
+      j++;
+   }
+   return items2;
+   }
+   document.querySelector(".whileloop").innerHTML=`
+   <ul>
+   ${listItems2(packingList)}
+   </ul>
+   `;
+   
+
+
+   function listItems3(arg3) {
+
+      let items3= ""; 
+      let k=0;
+      do{
+         items3 +=`<li>${arg3[k]}</li>`;
+         k++;
+      }
+      while(k < arg3.length) 
+      return items3;
+      }
+      document.querySelector(".doWhileLoop").innerHTML=`
+      <ul>
+      ${listItems3(packingList)}
+      </ul>
+      `;
+      
+   
+
+
+
